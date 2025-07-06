@@ -1,25 +1,107 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Saleh's website</title>
-</head>
-<body style="background-color: rgb(17, 108, 120);">
-<div style="background-color:rgb(45, 147, 161);border: 2px black solid; margin-left: 120px;margin-right: 120px;" >
-<center><h1 >Welcome to my personal website</h1></center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saleh's Website</title>
+    <style>
+        body {
+            background-color: rgb(17, 108, 120);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
 
-<h1 style="padding-left: 20px;">About Me</h1>
-<center><h3>My Name is Saleh Al-Ghamdi I'm a Computer Engineering student at Taif University with a passion for robotics and automation, Currently based in Jeddah for a hands-on robotics internship, what drives me is that i believe robotics will redefine Saudi Arabia’s industrial landscape, and I want to be part of building that future
-</h3>
-</center>
-<h1 style="padding-left: 20px;">Let's Connect</h1>
-    <center><h3>Here is my Linkedin and GitHub Accounts</h3></center>
-    <br>
-    <center><h2>Click on it !</h2></center>
-    <center><a href="https://github.com/s2leh"> <img src="GitHub.png" alt=GitHub Profile""></a></center>
-    <br>
-    <center><a href="https://www.linkedin.com/in/saleh-al-ghamdi-6bb005283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> <img src="linkedin.png" alt=GitHub Profile""></a></center>
-</div>
-<div style="background-color: rgb(29, 29, 134);border: 2px black solid; margin-left: 120px;margin-right: 120px;">
-    
-</div>
+        .container {
+            margin-left: 120px;
+            margin-right: 120px;
+            border: 2px solid black;
+            background-color: rgb(45, 147, 161);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .container h3 {
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .container a:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        .social-links img {
+            width: 50px;
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            background-color: rgb(45, 147, 161);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to my personal website</h1>
+        
+        <h1>About Me</h1>
+        <h3>
+            My name is Saleh Al-Ghamdi, and I'm a Computer Engineering student at Taif University with a passion for robotics and automation. 
+            Currently based in Jeddah for a hands-on robotics internship, what drives me is that I believe robotics will redefine Saudi Arabia’s industrial landscape, 
+            and I want to be part of building that future.
+        </h3>
+
+        <h1>Let's Connect</h1>
+        <h3>Here are my LinkedIn and GitHub Accounts</h3>
+
+        <div class="social-links">
+            <a href="https://github.com/s2leh" target="_blank">
+                <img src="GitHub.png" alt="GitHub Profile">
+            </a>
+            <a href="https://www.linkedin.com/in/saleh-al-ghamdi-6bb005283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn Profile">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Saleh Al-Ghamdi. All rights reserved.</p>
+    </footer>
 
 </body>
+</html>
