@@ -4,80 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saleh's Website</title>
-    <style>
-        body {
-            background-color: rgb(17, 108, 120);
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-        }
-
-        .container {
-            margin-left: 120px;
-            margin-right: 120px;
-            border: 2px solid black;
-            background-color: rgb(45, 147, 161);
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .container h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-
-        .container h3 {
-            text-align: center;
-            font-size: 1.2em;
-            line-height: 1.5;
-            margin-bottom: 30px;
-        }
-
-        .container a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.3em;
-            transition: transform 0.3s ease, filter 0.3s ease;
-        }
-
-        .container a:hover {
-            transform: scale(1.1);
-            filter: brightness(1.2);
-        }
-
-        .social-links img {
-            width: 50px;
-            margin: 0 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-links img:hover {
-            transform: scale(1.2);
-        }
-
-        footer {
-            background-color: rgb(45, 147, 161);
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        
-        html {
-            scroll-behavior: smooth;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+    const text = "Welcome to Saleh's Website!";
+    let index = 0;
+    const speed = 100;
+
+    function type() {
+        if (index < text.length) {
+            document.getElementById("typing-text").textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+
+    window.onload = type;
+</script>
+
+    
 
     <div class="container">
-        <h1>Welcome to my personal website</h1>
+        <h1 id="typing-text"></h1>
         
         <h1>About Me</h1>
         <h3>
